@@ -56,8 +56,10 @@ for(let i =0;i<footballTeams.length;i++) {
     footballTeams[i].punti=Math.floor(Math.random()*10)+1;
     footballTeams[i]["falli-subiti"]=Math.floor(Math.random()*10)+1;
 
-    nome:footballTeams[i].nome,
-    "falli-subiti":footballTeams[i]["falli-subiti"]
+    newArrayTeams[i]= {
+        nome:footballTeams[i].nome,
+        "falli-subiti":footballTeams[i]["falli-subiti"]
+    }
 }
 
 
