@@ -75,6 +75,12 @@ const b = 10;
 console.log(newArrayBetween(arrayFull,a,b));
 
 function newArrayBetween(array,numberA,numberB) {
+    Math.max(numberA,0);
+    Math.min(numberB,array.length);
+    if(!Array.isArray(array)) {
+        return console.error("passare un arrai nel primo parametro");
+        
+    }
     const arraySmall = [];
     const lengthBetween = numberB-numberA+1;
     for (let i= 0; i<lengthBetween;i++) {
