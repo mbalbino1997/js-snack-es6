@@ -74,6 +74,14 @@ const b = 10;
 
 console.log(newArrayBetween(arrayFull,a,b));
 
+
+/**
+ * 
+ * @param {Array} array 
+ * @param {number} numberA 
+ * @param {number} numberB 
+ * @returns {Array}
+ */
 function newArrayBetween(array,numberA,numberB) {
     Math.max(numberA,0);
     Math.min(numberB,array.length);
