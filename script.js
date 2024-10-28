@@ -89,6 +89,9 @@ function newArrayBetween(array,numberA,numberB) {
         return console.error("passare un arrai nel primo parametro");
         
     }
+    if(isNaN(numberA) || isNaN(numberB)) {
+        return console.error("il secondo ed il terzo parametro devono essere numeri");
+    }
     const arraySmall = [];
     const lengthBetween = numberB-numberA+1;
     for (let i= 0; i<lengthBetween;i++) {
