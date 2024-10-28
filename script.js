@@ -55,14 +55,11 @@ let newArrayTeams = [];
 for(let i =0;i<footballTeams.length;i++) {
     footballTeams[i].punti=Math.floor(Math.random()*10)+1;
     footballTeams[i]["falli-subiti"]=Math.floor(Math.random()*10)+1;
+
+    nome:footballTeams[i].nome,
+    "falli-subiti":footballTeams[i]["falli-subiti"]
 }
 
-for(let i=0;i<footballTeams.length;i++) {
-    newArrayTeams[i]= {
-        nome:footballTeams[i].nome,
-        "falli-subiti":footballTeams[i]["falli-subiti"]
-    }
-}
 
 console.log(newArrayTeams);
 
